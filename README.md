@@ -1,9 +1,6 @@
-# README
+# to_do
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
 * Ruby version
 ```
@@ -44,10 +41,3 @@ $ pg_ctl start
 2. Run $ rake db:create and $ rake db:migrate from the directory you cloned into
 3. Run $ rails server
 4. Go to http://localhost:3000/lists in a web browser to use the program.
-
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
