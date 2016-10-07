@@ -37,9 +37,14 @@ $ pg_ctl start
 
 ```
 
-* Database initialization
 
-* How to run the test suite
+
+* How to run the app
+1. Clone the repository using $ git clone
+2. Run $ rake db:create and $ rake db:migrate from the directory you cloned into
+3. Run $ rails server
+4. Go to http://localhost:3000/lists in a web browser to use the program.
+
 
 * Services (job queues, cache servers, search engines, etc.)
 
