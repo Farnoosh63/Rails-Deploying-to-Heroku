@@ -1,8 +1,10 @@
 <h1>Lists</h1>
+<%= image_tag "myAvatar.png" %>
 
 <ul>
   <% @lists.each do |list| %>
-    <li><%= list.name %>
+    <li><%= link_to "#{list.name}", list_path(list)  %>
     </li>
     <% end %>
 </ul>
+<%= link_to "Add new list", new_list_path %>
