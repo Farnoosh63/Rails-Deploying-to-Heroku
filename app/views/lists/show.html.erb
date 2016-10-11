@@ -6,22 +6,26 @@
   <%= link_to "Edit", edit_list_path %>
 
   <%= link_to "Delete", list_path(@list),
-                        :data => {:confirm => "You sure?",
-                        :method => "delete"} %>
-</p>
+  :data => {:confirm => "You sure?",
+    :method => "delete"} %>
+  </p>
   <% if @list.tasks.any? %>
   <h4> Here is the list of tasks: </h4>
-    <ul>
-      <%= @list.tasks.each do |task| %>
-        <li>
-        <%= task.description %> |
-         <%= link_to "Edit", edit_list_task_path(@list, task) %> |
-         <%= link_to "Delete", list_task_path(@list, task),
-                                :data => {:confirm => "Are you serious?",
-                                :method => "delete"} %>
-        </li>
-      <% end %>
-    </ul>
-  <% else %>
-  <h4>There is no Task, <%= link_to "click here", new_list_task_path(@list) %> </h4>
-  <% end %>
+  <!-- <%= @list.tasks.each do |task| %> -->
+
+  <!-- <ul> -->
+  <li>
+    <%= task.description %> |
+    <%= link_to "Edit", edit_list_task_path(@list, task) %> |
+
+    <%= link_to "Delete", list_task_path(@list, task),
+    :data => {:confirm => "Are you serious?",
+      :method => "delete"} %>
+    </li>
+
+    <!-- <% end %> -->
+
+    <!-- </ul> -->
+    <% else %>
+    <h4>There is no Task, <%= link_to "click here", new_list_task_path(@list) %> </h4>
+    <% end %>

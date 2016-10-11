@@ -50,6 +50,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 gem 'bootstrap-sass', '~> 3.3.6'
