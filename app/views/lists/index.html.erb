@@ -1,10 +1,9 @@
 <h1>Lists</h1>
-<%= image_tag "myAvatar.png" %>
-
+<%= image_tag "to-do.jpg", :id => "image" %>
+<%= link_to "Add new list", new_list_path, id: "new_list", remote: true, :class => 'new_list' %>
 <ul>
   <% @lists.each do |list| %>
     <li><%= link_to "#{list.name}", list_path(list)  %>
     </li>
     <% end %>
 </ul>
-<%= link_to "Add new list", new_list_path, id: "new_list", remote: true %>
